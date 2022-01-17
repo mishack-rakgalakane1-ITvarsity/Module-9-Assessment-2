@@ -11,10 +11,10 @@
         <div id="output"></div>
 
         <script>
-            var timer = setinterval(displayWorldTime, 1000)
+            var timer = setInterval(displayWorldTime, 1000)
 
             var cities = [
-            {name: "Istanbul", utcOffset: 3, flag: "Turkey.png"},
+                {name: "Istanbul", utcOffset: 3, flag: "Turkey.png"},
                 {name: "New York City", utcOffset: -5, flag: "United-States-of-America.png"},
                 {name: "Tokyo", utcOffset: 9, flag: "Japan.png"},
                 {name: "Moscow", utcOffset: 3, flag: "Russia.png"},
@@ -25,7 +25,7 @@
             ];
 
             cities.sort(compare);
-            console.log(getCurrentTime(cities[0].utcOffset));
+        
             function compare(a, b){
                 var cityA = a.name;
                 var cityB = b.name;
